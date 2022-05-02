@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity">
+
+
+    <EditText
+        android:fontFamily="casual"
+        android:id="@+id/searchOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:hint="Country"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <ImageButton
+        android:id="@+id/searchbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/searchOne"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button"
+        android:padding="13dp"
+        android:src="@drawable/ic_search" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchOne"
+        android:layout_margin="10dp"
+        android:background="#000DFF"
+        android:elevation="20dp"
+        app:cardCornerRadius="30dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="160dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+
+
+            <TextView
+                android:fontFamily="casual"
+                android:id="@+id/countryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="Country"
+                android:textColor="#000000"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/countryName"
+                android:layout_centerHorizontal="true"
+                android:background="#000DFF"
+                android:elevation="30dp"
+                app:contentPaddingRight="30dp">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+
+
+                    <TextView
+                        android:fontFamily="casual"
+                        android:id="@+id/cases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="Total Cases"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/casesTotalNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="12345"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:fontFamily="casual"
+                        android:id="@+id/death"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cases"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="Total Death"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/deathTotalNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/casesTotalNumber"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="12345"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:fontFamily="casual"
+                        android:id="@+id/recovered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/death"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="Total Recovered"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recoveredTotalNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deathTotalNumber"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="12345"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:fontFamily="casual"
+                        android:id="@+id/todayCases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recovered"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="Today Cases"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todayCasesNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recoveredTotalNumber"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="1234"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:fontFamily="casual"
+                        android:id="@+id/todayDeath"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todayCases"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="Today Death"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todayDeathNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todayCasesNumber"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="12345"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:fontFamily="casual"
+                        android:id="@+id/todayRecovered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todayDeath"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="Today Recovered"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recoveredTodayNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todayDeathNumber"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="12345"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:fontFamily="casual"
+                        android:id="@+id/todayActive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/todayRecovered"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="Active"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activeTotalNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recoveredTodayNumber"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:text="12345"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".fragment.InfoFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000DFF">
+
+            <TextView
+                android:id="@+id/covid19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:padding="10dp"
+                android:text="Covid-19"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/seek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/covid19"
+                android:fontFamily="casual"
+                android:padding="10dp"
+                android:text="Are you feeling seek"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seek"
+                android:fontFamily="casual"
+                android:padding="10dp"
+                android:text="If you feel seek with any covid-19 symotus then call or message us."
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_marginBottom="6dp"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/callNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/call"
+                    android:drawableStart="@drawable/ic_call"
+                    android:fontFamily="casual"
+                    android:text=" Call Now  "
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/messageNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/message"
+                    android:drawableStart="@drawable/ic_message"
+                    android:fontFamily="casual"
+                    android:text="  Message  "
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/prevention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_marginStart="30dp"
+        android:text="Prevention"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prevention"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp">
+
+
+        <ImageView
+            android:id="@+id/distance"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/social" />
+
+
+        <ImageView
+            android:id="@+id/wash"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/wash" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="70dp"
+        android:padding="7dp"
+        android:text="Social Distance"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/social"
+        android:padding="7dp"
+        android:text="Wash Hand"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/social"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="#082AFA"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#082AFA">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/yups" />
+
+            <TextView
+                android:id="@+id/sym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gif"
+                android:fontFamily="casual"
+                android:padding="8dp"
+                android:text="Any symotums?"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/checking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sym"
+                android:layout_toRightOf="@+id/gif"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Click here to check your symotus. "
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

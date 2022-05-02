@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/info"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard"/>
+
+    <item
+        android:id="@+id/tracker"
+        android:title="Tracker"
+        android:icon="@drawable/ic_covid"/>
+
+    <item
+        android:id="@+id/vaccine"
+        android:title="Vaccination"
+        android:icon="@drawable/ic_vaccine"/>
+
+</menu>
